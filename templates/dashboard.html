@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      min-height: 100vh;
+      background-image: url('https://img.freepik.com/free-photo/transport-logistics-products_23-2151541830.jpg?semt=ais_items_boosted&w=740');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.947);
+      backdrop-filter: blur(3px);
+      z-index: -1;
+    }
+
+    .dashboard-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      background: rgba(9, 9, 9, 0.9);
+      padding: 22px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 18px rgba(238, 233, 233, 0.733);
+      border-bottom: 1.5px solid rgba(241, 233, 233, 0.885);
+    }
+
+    .brand h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #eeeeee;
+      margin: 0;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #333;
+      padding: 9px 16px;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.7);
+      transition: background 0.3s, color 0.3s;
+      font-size: 1rem;
+    }
+
+    .nav-menu a:hover {
+      background: #e3f2fd;
+      color: #1a1b1c;
+    }
+
+    .logout-btn {
+      background-color: #f0250e;
+      color: rgb(13, 13, 13) !important;
+      font-weight: 600;
+      border: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .logout-btn:hover {
+      background-color: #c0392b;
+      transform: translateY(-2px) scale(1.03);
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 44px 6vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+
+    .main-content h2 {
+      font-size: 2.2rem;
+      margin-bottom: 32px;
+      color: #ffffff;
+      font-weight: 700;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .panel-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 36px;
+      justify-content: center;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      width: 260px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 26px 18px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .panel:hover {
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: 0 14px 38px rgba(0, 0, 0, 0.2);
+    }
+
+    .panel h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: #1c6f92;
+      font-weight: 600;
+    }
+
+    .panel .btn {
+      padding: 11px 28px;
+      background: linear-gradient(90deg, #111112, #111212);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(2, 136, 209, 0.3);
+    }
+
+    .panel .btn:hover {
+      background: linear-gradient(90deg, #0f0f0f, #080808);
+      transform: translateY(-2px) scale(1.03);
+    }
+
+    @media (max-width: 900px) {
+      .main-content {
+        padding: 32px 2vw;
+      }
+
+      .panel-container {
+        gap: 24px;
+      }
+
+      .panel {
+        width: 92vw;
+        max-width: 330px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .topbar {
+        flex-direction: column;
+        gap: 14px;
+        padding: 16px 4vw;
+      }
+
+      .main-content {
+        padding: 18px 2vw;
+      }
+
+      .panel {
+        width: 96vw;
+        max-width: 360px;
+        height: 170px;
+        padding: 18px 8px;
+      }
+
+      .brand h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Top Navigation Bar -->
+    <header class="topbar">
+      <div class="brand">
+        <h1>SCMxpertLite</h1>
+      </div>
+      <nav class="nav-menu">
+        <a href="/create-shipment">New Shipment</a>
+        <a href="/account">My Account</a>
+        <a class="logout-btn" href="/logout">Log out</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h2>Welcome to SCMxpertLite</h2>
+      <div class="panel-container">
+        <div class="panel left-panel">
+          <h3>Create a New Shipment</h3>
+          <button class="btn" onclick="window.location.href='/create-shipment'">Create Shipment</button>
+        </div>
+        <div class="panel right-panel">
+          <h3>My Account</h3>
+          <button class="btn" onclick="window.location.href='/account'">Get your Account Details</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
