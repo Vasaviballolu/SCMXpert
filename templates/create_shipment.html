@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Shipment</title>
+  <style>
+    :root {
+      --primary: #0a0a0a;
+      --primary-light: #111111;
+      --secondary: #1f2937;
+      --background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+      --text: #ffffff;
+      --input-bg: rgba(255, 255, 255, 0.1); /* Light transparent fields */
+      --border: #cccccc;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      min-height: 100vh;
+      color: var(--text);
+    }
+
+    .topbar {
+      background: var(--primary);
+      padding: 1rem 2rem;
+      color: var(--text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .topbar h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .nav-menu a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+
+    .nav-menu a:hover {
+      opacity: 0.85;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .create-shipment-wrapper {
+      
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 850px;
+      width: 100%;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+      
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #0f0f0f;
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-group {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: bold;
+      color: #111010;
+    }
+
+    input, select, textarea {
+      
+      width: 89%;
+      padding: 0.75rem 1rem;
+      background: var(--input-bg);
+      color: #262424;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+      backdrop-filter: blur(3px);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #0f0f0f;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #93c5fd;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .form-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .submit-btn, .clear-btn {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn {
+      background: #0f0f0f;
+      color: white;
+    }
+
+    .submit-btn:hover {
+      background: #7c94d5;
+    }
+
+    .clear-btn {
+      background: #6b7280;
+      color: white;
+    }
+
+    .clear-btn:hover {
+      background: #4b5563;
+    }
+
+    .flash-message {
+      background: #a3edd5;
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .form-row {
+        flex-direction: column;
+      }
+
+      .form-group {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>SCMXpert</h1>
+    <div class="nav-menu">
+      {% if role == "admin" %}
+        <a href="/admin-dashboard">Dashboard</a>
+      {% else %}
+        <a href="/dashboard">Dashboard</a>
+      {% endif %}
+      <a href="/logout">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="create-shipment-wrapper">
+      <h2>Create New Shipment</h2>
+
+      {% if flash %}
+        <div class="flash-message">{{ flash }}</div>
+      {% endif %}
+
+      <form action="/create-shipment" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="shipment_id">Shipment Number</label>
+            <input type="text" id="shipment_id" name="shipment_id" required placeholder="Enter shipment number">
+          </div>
+          <div class="form-group">
+            <label for="po_number">PO Number</label>
+            <input type="text" id="po_number" name="po_number" required placeholder="Enter PO number">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="route_details">Route Details</label>
+            <select id="route_details" name="route_details" required>
+              <option value="">Select Route</option>
+              <option value="Delhi - Mumbai">Delhi - Mumbai</option>
+              <option value="Hyderabad - Bangalore">Hyderabad - Bangalore</option>
+              <option value="Chennai - Pune">Chennai - Pune</option>
+            </select>
+          </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="device">Device</label>
+            <input type="text" id="device" name="device" required placeholder="Enter Device number">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ndc_number">NDC Number</label>
+            <input type="text" id="ndc_number" name="ndc_number" required placeholder="Enter NDC number">
+          </div>
+          <div class="form-group">
+            <label for="serial_number">Serial Number</label>
+            <input type="text" id="serial_number" name="serial_number" required placeholder="Enter serial number">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="container_number">Container Number</label>
+            <input type="text" id="container_number" name="container_number" required placeholder="Enter container number">
+          </div>
+          <div class="form-group">
+            <label for="goods_type">Goods Type</label>
+            <select id="goods_type" name="goods_type" required>
+              <option value="">Select Goods Type</option>
+              <option value="Pharma">Pharma</option>
+              <option value="Food">Food</option>
+              <option value="Electronics">Electronics</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="expected_delivery_date">Expected Delivery Date</label>
+            <input type="date" id="expected_delivery_date" name="expected_delivery_date" required>
+          </div>
+          <div class="form-group">
+            <label for="delivery_number">Delivery Number</label>
+            <input type="text" id="delivery_number" name="delivery_number" required placeholder="Enter delivery number">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="batch_id">Batch ID</label>
+            <input type="text" id="batch_id" name="batch_id" required placeholder="Enter batch ID">
+          </div>
+          <div class="form-group">
+            <label for="origin">Origin</label>
+            <input type="text" id="origin" name="origin" required placeholder="Enter origin">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" name="destination" required placeholder="Enter destination">
+          </div>
+          <div class="form-group">
+            <label for="status">Status</label>
+            <select id="status" name="status" required>
+              <option value="">Select Status</option>
+              <option value="Created">Created</option>
+              <option value="In Transit">In Transit</option>
+              <option value="Delivered">Delivered</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="shipment_description">Shipment Description</label>
+          <textarea id="shipment_description" name="shipment_description" required placeholder="Enter shipment description"></textarea>
+        </div>
+        <div class="form-buttons">
+          <button type="submit" class="submit-btn">Create Shipment</button>
+          <button type="reset" class="clear-btn">Clear Details</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

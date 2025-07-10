@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Shipment</title>
+    <style>
+        :root {
+            --primary: #4a6fa5;
+            --primary-light: #6b8cae;
+            --dark: #2d3748;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            background-color: rgb(195, 246, 195);
+            background-size: cover;
+            background-position: center;
+        
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--dark);
+        }
+
+        .form-container {
+            background: #eef7ee;
+            padding: 2rem;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        label {
+            font-weight: 500;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 1px solid #181818;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: rgba(102, 100, 100, 0.004);
+            color: var(--dark);
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.1);
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 1rem;
+        }
+
+        button:hover {
+            background: var(--primary-light);
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Edit Shipment</h2>
+        <form action="/edit-shipment/{{ shipment.shipment_id }}" method="post">
+            <div class="form-group">
+                <label for="po_number">PO Number</label>
+                <input type="text" id="po_number" name="po_number" value="{{ shipment.po_number }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="route_details">Route Details</label>
+                <input type="text" id="route_details" name="route_details" value="{{ shipment.route_details }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="device">Device</label>
+                <input type="text" id="device" name="device" value="{{ shipment.device }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="goods_type">Goods Type</label>
+                <input type="text" id="goods_type" name="goods_type" value="{{ shipment.goods_type }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expected_delivery_date">Expected Delivery Date</label>
+                <input type="date" id="expected_delivery_date" name="expected_delivery_date" value="{{ shipment.expected_delivery_date }}" required>
+            </div>
+
+            <button type="submit">Update Shipment</button>
+        </form>
+        <a href="/edit-shipment" class="back-link">Back to Shipments</a>
+    </div>
+</body>
+</html>

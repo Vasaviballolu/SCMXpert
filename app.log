@@ -702,6 +702,7 @@
 2025-07-10 12:13:57,339 - app.config - INFO - SessionMiddleware added.
 2025-07-10 12:13:57,803 - app.config - INFO - MongoDB connection established and collections initialized.
 2025-07-10 12:13:57,879 - app.config - INFO - All application routers included.
+<<<<<<< HEAD
 2025-07-10 12:19:54,251 - app.config - INFO - Logger initialized.
 2025-07-10 12:19:54,253 - app.config - INFO - .env file loaded: True
 2025-07-10 12:19:54,254 - app.config - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
@@ -711,3 +712,14 @@
 2025-07-10 12:19:54,544 - app.config - INFO - SessionMiddleware added.
 2025-07-10 12:19:54,841 - app.config - INFO - MongoDB connection established and collections initialized.
 2025-07-10 12:19:54,858 - app.config - INFO - All application routers included.
+=======
+>>>>>>> dev
+2025-07-10 12:27:54,062 - app.config - INFO - Logger initialized.
+2025-07-10 12:27:54,063 - app.config - INFO - .env file loaded: True
+2025-07-10 12:27:54,064 - app.config - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-10 12:27:54,273 - app.config - INFO - Creating FastAPI app instance.
+2025-07-10 12:27:54,274 - app.config - INFO - Static files mounted from './static'.
+2025-07-10 12:27:54,274 - app.config - INFO - Jinja2Templates initialized from './templates'.
+2025-07-10 12:27:54,274 - app.config - INFO - SessionMiddleware added.
+2025-07-10 12:27:54,352 - app.config - INFO - MongoDB connection established and collections initialized.
+2025-07-10 12:27:54,370 - app.config - INFO - All application routers included.

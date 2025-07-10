@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #7fa1ec;
+      --primary-light: #0b0b0b;
+      --secondary: #dba445;
+      --dark: #101011;
+      --light: #f8fafc;
+      --glass: rgba(255, 255, 255, 0.1);
+      --glass-dark: rgba(15, 23, 42, 0.7);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+      background: url('https://thumbs.dreamstime.com/b/container-ship-import-export-port-against-beautiful-morning-l-light-loading-yard-use-freight-cargo-shipping-58176407.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      color: var(--light);
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(31, 41, 55, 0.8));
+      z-index: -1;
+    }
+
+    .dashboard-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      backdrop-filter: blur(2px);
+    }
+
+    .topbar {
+      background: var(--glass-dark);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #ffffff, #e0f2fe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-icon {
+      font-size: 2rem;
+      color: var(--secondary);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--light);
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav-link::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--secondary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--secondary);
+    }
+
+    .nav-link:hover::before {
+      width: 100%;
+    }
+
+    .nav-link i {
+      font-size: 1.1rem;
+    }
+
+    .logout-btn {
+      background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+      color: white !important;
+      font-weight: 600;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .logout-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    }
+
+    details {
+      position: relative;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+    }
+
+    summary:hover {
+      color: var(--secondary);
+    }
+
+    summary::after {
+      content: "▾";
+      font-size: 0.8rem;
+      margin-left: 6px;
+      transition: transform 0.2s;
+    }
+
+    details[open] summary::after {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: var(--glass-dark);
+      backdrop-filter: blur(10px);
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      min-width: 200px;
+      padding: 0.5rem 0;
+      margin-top: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      z-index: 10;
+      animation: fadeIn 0.2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .dropdown-content a {
+      color: var(--light);
+      padding: 0.6rem 1rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+
+    .dropdown-content a:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--secondary);
+      padding-left: 1.2rem;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 3rem 5vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .welcome-title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #ffffff, #e0f2fe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      position: relative;
+    }
+
+    .welcome-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: var(--secondary);
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+
+    .panel-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1200px;
+      margin-top: 1rem;
+    }
+
+    .panel {
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .panel:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .panel-icon {
+      font-size: 2.5rem;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 2px solid var(--secondary);
+    }
+
+    .panel-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .panel-desc {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .panel-btn {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      font-weight: 600;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    }
+
+    .panel-btn:hover {
+      background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .topbar {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+      }
+
+      .nav-menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .welcome-title {
+        font-size: 2rem;
+      }
+
+      .panel-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="topbar">
+      <div class="brand">
+        <i class="fas fa-plane brand-icon"></i>
+        <h1>SCMXpert Admin</h1>
+      </div>
+      <div class="nav-menu">
+        <details>
+          <summary class="nav-link">
+            <span>Shipments</span>
+          </summary>
+          <div class="dropdown-content">
+            <a href="/create-shipment">Create Shipment</a>
+            <a href="/edit-shipment">Edit Shipment</a>
+          </div>
+        </details>
+        <a href="/user_management" class="nav-link">User Management</a>
+        <a href="/device-data" class="nav-link">Device Data</a>
+        <a class="nav-link logout-btn" href="/logout">Logout</a>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h2 class="welcome-title"> Administrator</h2>
+      <div class="panel-container">
+        <div class="panel">
+          
+          <h3 class="panel-title">Shipment Management</h3>
+          <p class="panel-desc">Create, edit, and track all shipments in the system</p>
+          <a href="/edit-shipment" class="panel-btn">Manage Shipments</a>
+        </div>
+
+        <div class="panel">
+          
+          <h3 class="panel-title">User Management</h3>
+          <p class="panel-desc">View and manage all user accounts and permissions</p>
+          <a href="/user_management" class="panel-btn">Manage Users</a>
+        </div>
+
+        <div class="panel">
+          
+          <h3 class="panel-title">Device Data</h3>
+          <p class="panel-desc">Monitor and analyze IoT device data and metrics</p>
+          <a href="/device-data" class="panel-btn">View Device Data</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
