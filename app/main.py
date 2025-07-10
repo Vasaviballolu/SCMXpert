@@ -90,3 +90,7 @@ def root():
     logger.info(f"Root endpoint accessed, redirecting to {LOGIN_ROUTE}.")
     return RedirectResponse(url=LOGIN_ROUTE)
 
+
+
+
+

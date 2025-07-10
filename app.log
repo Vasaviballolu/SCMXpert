@@ -501,3 +501,204 @@
 2025-07-10 10:46:27,995 - app.config - INFO - Login page requested.
 2025-07-10 10:46:28,291 - app.config - ERROR - HTTP Exception caught: 404 - Not Found
 2025-07-10 10:46:29,990 - app.config - ERROR - HTTP Exception caught: 404 - Not Found
+2025-07-10 11:24:23,943 - app.config - INFO - Logger initialized.
+2025-07-10 11:24:23,946 - app.config - INFO - .env file loaded: True
+2025-07-10 11:24:23,946 - app.config - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-10 11:24:24,475 - app.config - INFO - Creating FastAPI app instance.
+2025-07-10 11:24:24,477 - app.config - INFO - Static files mounted from './static'.
+2025-07-10 11:24:24,477 - app.config - INFO - Jinja2Templates initialized from './templates'.
+2025-07-10 11:24:24,478 - app.config - INFO - SessionMiddleware added.
+2025-07-10 11:24:25,925 - app.config - INFO - MongoDB connection established and collections initialized.
+2025-07-10 11:24:25,978 - app.config - INFO - All application routers included.
+2025-07-10 11:24:34,476 - app.config - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-10 11:24:34,565 - app.config - INFO - Login page requested.
+2025-07-10 11:24:34,769 - app.config - ERROR - HTTP Exception caught: 404 - Not Found
+2025-07-10 11:24:35,534 - app.config - ERROR - HTTP Exception caught: 404 - Not Found
+2025-07-10 11:24:47,367 - app.config - INFO - Login attempt for username: vasaviballolu@gmail.com
+2025-07-10 11:24:48,058 - app.config - INFO - Login successful for vasaviballolu@gmail.com with role user.
+2025-07-10 11:24:48,068 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YXNhdmliYWxsb2x1QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUyMTI3NDg3fQ.gXlGUN4kmLkp9FK1FWEQD3AHs4eW7gjO4dbIeBLuvr4
+2025-07-10 11:24:48,098 - app.config - INFO - Dashboard requested by vasaviballolu@gmail.com (Role: user).
+2025-07-10 11:24:51,128 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YXNhdmliYWxsb2x1QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUyMTI3NDg3fQ.gXlGUN4kmLkp9FK1FWEQD3AHs4eW7gjO4dbIeBLuvr4
+2025-07-10 11:24:51,156 - app.config - INFO - Create shipment page requested by vasaviballolu@gmail.com.
+2025-07-10 11:24:59,005 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YXNhdmliYWxsb2x1QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUyMTI3NDg3fQ.gXlGUN4kmLkp9FK1FWEQD3AHs4eW7gjO4dbIeBLuvr4
+2025-07-10 11:24:59,264 - app.config - INFO - Dashboard requested by vasaviballolu@gmail.com (Role: user).
+2025-07-10 11:25:00,928 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YXNhdmliYWxsb2x1QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUyMTI3NDg3fQ.gXlGUN4kmLkp9FK1FWEQD3AHs4eW7gjO4dbIeBLuvr4
+2025-07-10 11:25:01,116 - app.config - INFO - Account page requested by vasaviballolu@gmail.com.
+2025-07-10 11:25:06,386 - app.config - INFO - User logged out.
+2025-07-10 11:25:06,397 - app.config - INFO - Login page requested.
+2025-07-10 11:25:16,331 - app.config - INFO - Login attempt for username: vaishu24@gmail.com
+2025-07-10 11:25:16,812 - app.config - INFO - Login successful for vaishu24@gmail.com with role admin.
+2025-07-10 11:25:16,825 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:16,852 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:25:19,447 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:19,512 - app.config - INFO - Edit shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:25:23,428 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:23,696 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:25:25,253 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:25,324 - app.config - INFO - User management page requested by vaishu24@gmail.com.
+2025-07-10 11:25:32,041 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:32,183 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:25:33,637 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:33,703 - app.config - INFO - Device data page requested by vaishu24@gmail.com.
+2025-07-10 11:25:33,899 - app.config - INFO - Fetched records for Device ID: all (latest)
+2025-07-10 11:25:40,782 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:40,898 - app.config - INFO - Device data page requested by vaishu24@gmail.com.
+2025-07-10 11:25:41,069 - app.config - INFO - Fetched records for Device ID: 1001
+2025-07-10 11:25:46,985 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:47,031 - app.config - INFO - User management page requested by vaishu24@gmail.com.
+2025-07-10 11:25:51,477 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:51,572 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:25:54,224 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:54,544 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:25:58,061 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:25:58,362 - app.config - INFO - Edit shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:26:32,296 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:26:32,697 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:29:26,132 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:29:26,167 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:29:45,950 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:29:46,000 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:30:44,943 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:30:45,119 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:31:35,261 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:31:35,469 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:31:50,849 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:31:51,035 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:32:00,121 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:32:00,452 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:32:59,701 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:32:59,926 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:34:38,997 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:34:39,092 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:34:56,427 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:34:56,665 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:34:58,046 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:34:58,324 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:35:02,110 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjc1MTZ9.0xfRMaR2bYdgdymnyV2RjiVqP5600mHdUO6MogcGF_o
+2025-07-10 11:35:02,598 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:35:43,122 - app.config - DEBUG - JWT token from cookie: None
+2025-07-10 11:35:43,123 - app.config - ERROR - JWT token not found in cookie or header.
+2025-07-10 11:35:43,123 - app.config - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-07-10 11:35:47,553 - app.config - DEBUG - JWT token from cookie: None
+2025-07-10 11:35:47,553 - app.config - ERROR - JWT token not found in cookie or header.
+2025-07-10 11:35:47,554 - app.config - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-07-10 11:36:09,502 - app.config - DEBUG - JWT token from cookie: None
+2025-07-10 11:36:09,502 - app.config - ERROR - JWT token not found in cookie or header.
+2025-07-10 11:36:09,503 - app.config - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-07-10 11:36:10,425 - app.config - DEBUG - JWT token from cookie: None
+2025-07-10 11:36:10,426 - app.config - ERROR - JWT token not found in cookie or header.
+2025-07-10 11:36:10,426 - app.config - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-07-10 11:36:10,638 - app.config - DEBUG - JWT token from cookie: None
+2025-07-10 11:36:10,639 - app.config - ERROR - JWT token not found in cookie or header.
+2025-07-10 11:36:10,639 - app.config - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-07-10 11:36:27,840 - app.config - INFO - Logger initialized.
+2025-07-10 11:36:27,843 - app.config - INFO - .env file loaded: True
+2025-07-10 11:36:27,844 - app.config - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-10 11:36:28,134 - app.config - INFO - Creating FastAPI app instance.
+2025-07-10 11:36:28,136 - app.config - INFO - Static files mounted from './static'.
+2025-07-10 11:36:28,136 - app.config - INFO - Jinja2Templates initialized from './templates'.
+2025-07-10 11:36:28,137 - app.config - INFO - SessionMiddleware added.
+2025-07-10 11:36:28,355 - app.config - INFO - MongoDB connection established and collections initialized.
+2025-07-10 11:36:28,389 - app.config - INFO - All application routers included.
+2025-07-10 11:36:32,503 - app.config - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-10 11:36:32,605 - app.config - INFO - Login page requested.
+2025-07-10 11:36:32,797 - app.config - ERROR - HTTP Exception caught: 404 - Not Found
+2025-07-10 11:36:33,444 - app.config - ERROR - HTTP Exception caught: 404 - Not Found
+2025-07-10 11:36:37,789 - app.config - INFO - Login attempt for username: vaishu24@gmail.com
+2025-07-10 11:36:38,499 - app.config - INFO - Login successful for vaishu24@gmail.com with role admin.
+2025-07-10 11:36:38,510 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:36:38,538 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:36:42,104 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:36:42,133 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:37:19,864 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:37:19,935 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:38:47,140 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:38:47,296 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:38:59,460 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:38:59,489 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:39:25,589 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:39:25,800 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:39:38,101 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:39:38,386 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:39:59,971 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:40:00,211 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:40:15,021 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:40:15,260 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:40:31,571 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:40:31,826 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:40:46,808 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:40:47,206 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:41:01,190 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjgxOTh9.s4A2-5wxypjCvdfJ0l5brV0jS8iE56FlhkmKFN9Xt8A
+2025-07-10 11:41:01,319 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:43:07,168 - app.config - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-10 11:43:07,185 - app.config - INFO - Login page requested.
+2025-07-10 11:43:07,327 - app.config - ERROR - HTTP Exception caught: 404 - Not Found
+2025-07-10 11:43:11,012 - app.config - INFO - Login attempt for username: vaishu24@gmail.com
+2025-07-10 11:43:11,650 - app.config - INFO - Login successful for vaishu24@gmail.com with role admin.
+2025-07-10 11:43:11,658 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg1OTF9.Yl20Z7rFT1IJr-cBTYdyj4VAsaxOWF7qFUh6QcLvDF0
+2025-07-10 11:43:11,687 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:43:15,430 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg1OTF9.Yl20Z7rFT1IJr-cBTYdyj4VAsaxOWF7qFUh6QcLvDF0
+2025-07-10 11:43:15,830 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:44:12,016 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg1OTF9.Yl20Z7rFT1IJr-cBTYdyj4VAsaxOWF7qFUh6QcLvDF0
+2025-07-10 11:44:12,418 - app.config - INFO - Shipment creation submitted by vaishu24@gmail.com for shipment ID: SH8976.
+2025-07-10 11:44:13,200 - app.config - INFO - Shipment SH8976 created successfully.
+2025-07-10 11:44:13,213 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg1OTF9.Yl20Z7rFT1IJr-cBTYdyj4VAsaxOWF7qFUh6QcLvDF0
+2025-07-10 11:44:13,284 - app.config - INFO - Create shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:44:16,717 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg1OTF9.Yl20Z7rFT1IJr-cBTYdyj4VAsaxOWF7qFUh6QcLvDF0
+2025-07-10 11:44:17,108 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:44:20,464 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg1OTF9.Yl20Z7rFT1IJr-cBTYdyj4VAsaxOWF7qFUh6QcLvDF0
+2025-07-10 11:44:20,715 - app.config - INFO - Edit shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:44:25,747 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg1OTF9.Yl20Z7rFT1IJr-cBTYdyj4VAsaxOWF7qFUh6QcLvDF0
+2025-07-10 11:44:25,775 - app.config - INFO - Device data page requested by vaishu24@gmail.com.
+2025-07-10 11:44:25,841 - app.config - INFO - Fetched records for Device ID: all (latest)
+2025-07-10 11:46:14,711 - app.config - INFO - Logger initialized.
+2025-07-10 11:46:14,714 - app.config - INFO - .env file loaded: True
+2025-07-10 11:46:14,715 - app.config - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-10 11:46:15,051 - app.config - INFO - Creating FastAPI app instance.
+2025-07-10 11:46:15,053 - app.config - INFO - Static files mounted from './static'.
+2025-07-10 11:46:15,053 - app.config - INFO - Jinja2Templates initialized from './templates'.
+2025-07-10 11:46:15,054 - app.config - INFO - SessionMiddleware added.
+2025-07-10 11:46:15,538 - app.config - INFO - MongoDB connection established and collections initialized.
+2025-07-10 11:46:15,575 - app.config - INFO - All application routers included.
+2025-07-10 11:46:20,505 - app.config - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-10 11:46:20,525 - app.config - INFO - Login page requested.
+2025-07-10 11:46:20,829 - app.config - ERROR - HTTP Exception caught: 404 - Not Found
+2025-07-10 11:46:21,441 - app.config - ERROR - HTTP Exception caught: 404 - Not Found
+2025-07-10 11:47:04,514 - app.config - INFO - Login attempt for username: vaishu24@gmail.com
+2025-07-10 11:47:05,794 - app.config - INFO - Login successful for vaishu24@gmail.com with role admin.
+2025-07-10 11:47:05,807 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg4MjV9.8CgR4Cc85naMVEjnUzzqh5vSHszonW3tsPhi6zhIk7Y
+2025-07-10 11:47:05,836 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:47:34,416 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg4MjV9.8CgR4Cc85naMVEjnUzzqh5vSHszonW3tsPhi6zhIk7Y
+2025-07-10 11:47:34,534 - app.config - INFO - Edit shipment page requested by vaishu24@gmail.com.
+2025-07-10 11:47:40,415 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg4MjV9.8CgR4Cc85naMVEjnUzzqh5vSHszonW3tsPhi6zhIk7Y
+2025-07-10 11:47:40,442 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:47:42,127 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg4MjV9.8CgR4Cc85naMVEjnUzzqh5vSHszonW3tsPhi6zhIk7Y
+2025-07-10 11:47:42,159 - app.config - INFO - User management page requested by vaishu24@gmail.com.
+2025-07-10 11:48:11,751 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg4MjV9.8CgR4Cc85naMVEjnUzzqh5vSHszonW3tsPhi6zhIk7Y
+2025-07-10 11:48:11,943 - app.config - INFO - Admin dashboard requested by vaishu24@gmail.com.
+2025-07-10 11:48:14,046 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg4MjV9.8CgR4Cc85naMVEjnUzzqh5vSHszonW3tsPhi6zhIk7Y
+2025-07-10 11:48:14,091 - app.config - INFO - Device data page requested by vaishu24@gmail.com.
+2025-07-10 11:48:14,435 - app.config - INFO - Fetched records for Device ID: all (latest)
+2025-07-10 11:48:20,631 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YWlzaHUyNEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTIxMjg4MjV9.8CgR4Cc85naMVEjnUzzqh5vSHszonW3tsPhi6zhIk7Y
+2025-07-10 11:48:20,721 - app.config - INFO - Device data page requested by vaishu24@gmail.com.
+2025-07-10 11:48:21,174 - app.config - INFO - Fetched records for Device ID: 1000
+2025-07-10 11:48:26,773 - app.config - INFO - User logged out.
+2025-07-10 11:48:26,803 - app.config - INFO - Login page requested.
+2025-07-10 11:48:33,503 - app.config - INFO - Login attempt for username: vasaviballolu@gmail.com
+2025-07-10 11:48:34,659 - app.config - INFO - Login successful for vasaviballolu@gmail.com with role user.
+2025-07-10 11:48:34,672 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YXNhdmliYWxsb2x1QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUyMTI4OTE0fQ.wxkHWyXR98G1SBor4JWhnS6vDhgIyPfTMuKmyL80whI
+2025-07-10 11:48:34,701 - app.config - INFO - Dashboard requested by vasaviballolu@gmail.com (Role: user).
+2025-07-10 11:48:54,827 - app.config - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YXNhdmliYWxsb2x1QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUyMTI4OTE0fQ.wxkHWyXR98G1SBor4JWhnS6vDhgIyPfTMuKmyL80whI
+2025-07-10 11:48:55,146 - app.config - INFO - Account page requested by vasaviballolu@gmail.com.
+2025-07-10 12:06:38,487 - app.config - DEBUG - JWT token from cookie: None
+2025-07-10 12:06:38,488 - app.config - ERROR - JWT token not found in cookie or header.
+2025-07-10 12:06:38,489 - app.config - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-07-10 12:13:56,695 - app.config - INFO - Logger initialized.
+2025-07-10 12:13:56,700 - app.config - INFO - .env file loaded: True
+2025-07-10 12:13:56,703 - app.config - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-10 12:13:57,335 - app.config - INFO - Creating FastAPI app instance.
+2025-07-10 12:13:57,338 - app.config - INFO - Static files mounted from './static'.
+2025-07-10 12:13:57,338 - app.config - INFO - Jinja2Templates initialized from './templates'.
+2025-07-10 12:13:57,339 - app.config - INFO - SessionMiddleware added.
+2025-07-10 12:13:57,803 - app.config - INFO - MongoDB connection established and collections initialized.
+2025-07-10 12:13:57,879 - app.config - INFO - All application routers included.
